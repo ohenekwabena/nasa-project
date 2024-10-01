@@ -10,7 +10,7 @@ const MONGODB_URL = "mongodb+srv://nasaUser:M65ik6wKi5qQ5e0X@basiccluster.ftcop.
 const server = http.createServer(app);
 
 mongoose.connection.once('open', () => {
-    console.log('MongoDB connection ready');
+    ('MongoDB connection ready');
 });
 
 mongoose.connection.on('error', (err) => {
