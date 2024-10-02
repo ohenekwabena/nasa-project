@@ -35,7 +35,7 @@ async function httpAddNewLaunch(req, res) {
 async function httpAbortLaunch(req, res) {
     const launchId = Number(req.params.id);
     
-    const launchExists = launchWithIdExists(launchId);
+    const launchExists = await launchWithIdExists(launchId);
     if(!launchExists) {
         return res.status(404).json({
             error: 'Launch not found'
