@@ -57,7 +57,7 @@ async function populateLaunches() {
     
         console.log(`Launch saved: ${launch.flightNumber} ${launch.mission}`);
         
-        // saveLaunch(launch);
+        saveLaunch(launch);
     }   
 }
 
